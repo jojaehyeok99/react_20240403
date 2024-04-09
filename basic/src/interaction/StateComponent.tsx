@@ -9,7 +9,7 @@ import React, { ChangeEvent, useState } from 'react'
 export default function StateComponent() {
 
   // status 선언 :
-  // - useState 함수로 함수를 선언 할 수 있음
+  // - useState 함수로 상태를 선언 할 수 있음
   // - const [상태변수, 상태변경함수] = useState<상태변수타입>(초기값);
   // - 상태변경함수는 set함수처럼 사용
 
@@ -57,7 +57,7 @@ export default function StateComponent() {
   };
 
   const onAddListHandler = () => {
-    // 상태가 배열 혹은 객체이면 각각에 대해 요소를 추가, 변경일 일어나도 상태가 변경된 것으로 인식하지 않음 (실제 주소 변경 x)
+    // 상태가 배열 혹은 객체이면 각각에 대해 요소를 추가, 변경이 일어나도 상태가 변경된 것으로 인식하지 않음 (실제 주소 변경 x)
     // 상태가 변경된 것으로 인식하게 하고 싶으면 새로운 배열 혹은 객체를 생성하여 상태를 변경해야 함 (일반적으로 복사해서 변경)
     // favorites.push(favorite);
     // const newFavorites = favorites.map(item => item);
