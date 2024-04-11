@@ -1,12 +1,11 @@
-/* 아이디 입력창 설정*/
-.input{
+.input {
   flex-grow: 1;
-  border: 1px solid rgba(238,238,238,1);
+  border: 1px solid rgba(238, 238, 238, 1);
   border-radius: 6px;
   outline: none;
   padding: 8px 16px;
 
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
 
   font-family: Inter;
   font-size: 16px;
@@ -14,106 +13,81 @@
   font-weight: 400;
   line-height: 175%;
 
-  color : rgba(35,45,66,1);
+  color: rgba(35, 45, 66, 1);
 }
 
-/* 아이디를 입력해주세요 글씨 색상 변경*/
-.input::placeholder{
-  color : rgba(138,146,166,1);
+.input::placeholder {
+  color: rgba(138, 146, 166, 1);
 }
 
-/* sns 버튼 관련 설정*/
-.sns-container-title{
-  color: rgba(138,146,166,1);
+.sns-container-title {
+  color: rgba(138, 146, 166, 1);
 }
 
-.sns-button-container{
+.sns-button-container {
   display: flex;
   gap: 24px;
 }
 
-/* 회원가입 아이디, 비밀번호 입력창 관련*/
-.input-box{
+.input-box {
   width: 100%;
 }
 
-.input-label{
-  color : rgba(138,146,166,1);
+.input-label {
+  color: rgba(138, 146, 166, 1);
 }
 
-/* 아이디 입력창 안 설정*/
 .input-content-box{
-  margin-top: 8px;
-  margin-bottom: 4px;
-
   display: flex;
   gap: 10px;
+
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
-.input-primary-button{
+.input-primary-button {
   box-sizing: border-box;
   width: 110px;
   padding: 8px 0px;
-
-  background-color: rgba(58,87,232,0.2);
   border-radius: 6px;
+
+  background-color: rgba(58, 87, 232, 0.2);
 
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
-  color: rgba(45,66,178,1);
+
+  color: rgba(45, 66, 178, 1);
+
   text-align: center;
 }
 
-.input-primary-button:hover{
+.input-primary-button:hover {
   cursor: pointer;
 }
 
-.input-disable-button{
+.input-disable-button {
   box-sizing: border-box;
   width: 110px;
   padding: 8px 0px;
-
-  background-color: rgba(238,238,238,1);
   border-radius: 6px;
+
+  background-color: rgba(238, 238, 238, 1);
 
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
-  color: rgba(138,146,166,1);
+
+  color: rgba(138, 146, 166, 1);
+
   text-align: center;
 }
 
-/* 로그인 입력 확인 메세지 설정*/
-.input-message{
+.input-message {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-/* 로그아웃 버튼 */
-.second-button{
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 8px 24px;
-
-  background-color: rgba(58,87,232,0.2);
-  border-radius: 6px;
-
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 175%;
-  color: rgba(45,66,178,1);
-}
-
-.second-button:hover{
-  cursor: pointer;
-  opacity: 0.85;
 }
