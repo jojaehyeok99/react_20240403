@@ -11,6 +11,7 @@ import ListRendering from './component_manage/ListRendering';
 import EventComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
 import ForwardingStateComponent from './interaction/ForwardingStateComponent';
+import HookComponent1 from './hook/HookComponent1';
 
 // JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -86,7 +87,8 @@ function App() {
       {/* <ListRendering /> */}
       {/* {<EventComponent />} */}
       {/* <StateComponent /> */}
-      <ForwardingStateComponent />
+      {/* <ForwardingStateComponent /> */}
+      <HookComponent1 />
       </div>
   );
 }
