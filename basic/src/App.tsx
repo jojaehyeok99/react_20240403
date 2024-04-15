@@ -12,6 +12,7 @@ import EventComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
 import ForwardingStateComponent from './interaction/ForwardingStateComponent';
 import HookComponent1 from './hook/HookComponent1';
+import HookComponent2 from './hook/HookComponent2';
 
 // JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -88,7 +89,8 @@ function App() {
       {/* {<EventComponent />} */}
       {/* <StateComponent /> */}
       {/* <ForwardingStateComponent /> */}
-      <HookComponent1 />
+      {/* <HookComponent1 /> */}
+      <HookComponent2 />
       </div>
   );
 }
