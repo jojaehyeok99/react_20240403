@@ -71,6 +71,38 @@ export default function ZustandLibrary() {
         <button onClick={decreaseZNormal}>-</button>
         <button onClick={increaseZNormal}>+</button>
       </div>
+      <SubComponent1 normal={normal} increaseNormal={increaseNormal} decreaseNormal={decreaseNormal}/>
+      <SubComponent2 />
+    </div>
+  )
+}
+
+interface Sub1Props {
+  normal : number;
+  increaseNormal : () => void;
+  decreaseNormal : () => void;
+}
+
+function SubComponent1 ({normal, increaseNormal, decreaseNormal} : Sub1Props) {
+
+  return (
+    <div>
+      <h5>Normal : {normal}</h5>
+      <button onClick={decreaseNormal}>-</button>
+      <button onClick={increaseNormal}>+</button>
+    </div>
+  )
+}
+
+function SubComponent2 () {
+
+  const {zNormal, increaseZNormal, decreaseZNormal} = useStore();
+
+  return (
+    <div>
+      <h5>Zustand : {zNormal}</h5>
+      <button onClick={decreaseZNormal}>-</button>
+      <button onClick={increaseZNormal}>+</button>
     </div>
   )
 }
