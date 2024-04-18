@@ -15,7 +15,7 @@ function App() {
     <Route path='/router' element={<Layout />}>
       <Route index element={<ReactRouterLibrary />} />
       {/* 현재 path의 URL을 path='/router'로 설정했을때 path='/page1' '/' 빼기 */}
-      <Route path='page1' element={<ReactRouterPage1 />} />
+      <Route path='page1/:value' element={<ReactRouterPage1 />} />
       <Route path='page2' element={<ReactRouterPage2 />} />
     </Route>
     <Route path='/zustand' element={<ZustandLibrary />} />
